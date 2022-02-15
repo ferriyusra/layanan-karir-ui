@@ -1,0 +1,3 @@
+export const START_FETCHING_JOB= 'features/Job/START_FETCHING_JOB'
+export const ERROR_FETCHING_JOB= 'features/Job/ERROR_FETCHING_JOB'
+export const SUCCESS_FETCHING_JOB= 'features/Job/SUCCESS_FETCHING_JOB'
