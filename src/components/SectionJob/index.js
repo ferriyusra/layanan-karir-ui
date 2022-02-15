@@ -7,7 +7,6 @@ import { config } from '../../config';
 import { fetchJobs } from '../../features/Job/actions';
 import NumberFormat from 'react-number-format';
 import AiFillDollarCircle from '@meronex/icons/ai/AiFillDollarCircle';
-import BiWorld from '@meronex/icons/bi/BiWorld';
 import MdcMapMarkerRadius from '@meronex/icons/mdc/MdcMapMarkerRadius';
 
 export default function SectionJob() {
@@ -19,7 +18,6 @@ export default function SectionJob() {
       dispatch(fetchJobs())
     }, [dispatch]);
 
-    // console.log(jobs)
 
     return (
         <section className="find-job section" id="lowongan_kerja">

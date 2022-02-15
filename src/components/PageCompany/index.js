@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import FadeLoader from 'react-spinners/FadeLoader'
@@ -7,7 +6,6 @@ import { config } from '../../config';
 import { fetchCompanies } from '../../features/Company/actions';
 import MdcMapMarkerRadius from '@meronex/icons/mdc/MdcMapMarkerRadius';
 import BisBuildings from '@meronex/icons/bi/BisBuildings';
-import NumberFormat from 'react-number-format';
 
 export default function SectionCompany() {
     
@@ -18,7 +16,6 @@ export default function SectionCompany() {
       dispatch(fetchCompanies())
     }, [dispatch]);
 
-    console.log(companies)
    
     return (
         <section className="find-job section" id="lowongan_kerja">

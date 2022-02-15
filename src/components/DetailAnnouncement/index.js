@@ -32,7 +32,6 @@ export default function DetailAnnouncement(){
     React.useEffect(() => {
         getAnnouncementById(params?.announcement_id)
             .then(({ data }) => {
-                console.log(params);
 
                 if (data?.error) {
                     setError(data.message || "Terjadi kesalahan yang tidak diketahui");

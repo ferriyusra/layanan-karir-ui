@@ -27,7 +27,6 @@ export default function DetailJob(){
     React.useEffect(() => {
         getJobById(params?.job_id)
             .then(({ data }) => {
-                console.log(params);
 
                 if (data?.error) {
                     setError(data.message || "Terjadi kesalahan yang tidak diketahui");
@@ -54,7 +53,6 @@ export default function DetailJob(){
 
    let job_skills = job.data.job_skills;
    let job_benefits = job.data.job_benefits;
-//    console.log(job_skills)
 
    const listSkills = job_skills.map((skill) => <span className="badge rounded-pill bg-secondary h-75 mx-1">{skill.name}</span>)
 

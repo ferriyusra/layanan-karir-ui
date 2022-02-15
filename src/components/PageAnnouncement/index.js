@@ -4,8 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import FadeLoader from 'react-spinners/FadeLoader'
 import { config } from '../../config';
 import { fetchAnnouncements } from '../../features/Announcement/actions';
-import BiRightArrowAlt from '@meronex/icons/bi/BiRightArrowAlt';
-import moment from 'moment'
 import BsTagFill from '@meronex/icons/bs/BsTagFill';
 
 
@@ -17,8 +15,6 @@ export default function SectionAnnouncement(){
     React.useEffect(() => {
       dispatch(fetchAnnouncements())
     }, [dispatch]);
-
-    console.log(announcements)
 
     return(
         <section className="blog_area section-padding">

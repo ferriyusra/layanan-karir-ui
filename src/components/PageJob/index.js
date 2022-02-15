@@ -18,7 +18,6 @@ export default function SectionJob() {
       dispatch(fetchJobs())
     }, [dispatch]);
 
-    console.log(jobs)
 
     return (
         <section className="find-job section" id="lowongan_kerja">
