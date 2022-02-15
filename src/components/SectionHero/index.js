@@ -47,7 +47,7 @@ export default function SectionHero() {
                     </div>
 
                     <div className="d-inline-block align-items-center mx-auto mx-lg-0 justify-content-center">
-                        <Link component={Link} to="lowongan_kerja" spy={true} smooth={true} className="btn btn-main text-white d-inline-flex align-items-center mb-lg-0 mb-md-0">
+                        <Link component={Link} to="/jobs" spy={true} smooth={true} className="btn btn-main text-white d-inline-flex align-items-center mb-lg-0 mb-md-0">
                             <span className="me-1">Cari kerja</span>
                             <svg className="btn-fill-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
